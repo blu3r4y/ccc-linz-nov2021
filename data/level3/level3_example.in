@@ -1,0 +1,29 @@
+28
+start
+print something
+var error initialised
+var error again
+end
+start
+print hello
+var hello world
+print hello
+var boolean false
+if boolean
+var hello old
+end
+else
+set hello boolean
+end
+print hello
+print world
+if true
+return true
+end
+else
+end
+print unreached
+end
+start
+print hello
+end
