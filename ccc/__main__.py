@@ -1,3 +1,5 @@
+import re
+
 from pprint import pprint
 from pathlib import Path
 
@@ -5,14 +7,22 @@ from loguru import logger as log
 
 from .contest import solve
 
+from funcy import lflatten
+
 
 def load(data):
-    return {"data": data}
+    tokens = lflatten([d.split(" ") for d in data])
+    num_lines = int(tokens.pop(0))
+
+    return dict(tokens=tokens)
 
 
 if __name__ == "__main__":
-    level, quests = 0, 5
+    level, quests = 1, 5
     for quest in range(quests + 1):
+        if quest == 0:
+            quest = "example"
+
         base_path = Path("data")
         input_file = base_path / f"level{level}" / f"level{level}_{quest}.in"
         output_file = input_file.with_suffix(".out")
@@ -23,7 +33,7 @@ if __name__ == "__main__":
 
         with open(input_file, "r") as fi:
             data = load(fi.read().splitlines())
-            pprint(data)
+            # pprint(data)
 
             print("=== Input {}".format(quest))
             print("======================")
