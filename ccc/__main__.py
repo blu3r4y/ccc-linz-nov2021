@@ -1,24 +1,21 @@
-import re
-
 from pprint import pprint
 from pathlib import Path
 
 from loguru import logger as log
+from funcy import lflatten
 
 from .contest import solve
-
-from funcy import lflatten
 
 
 def load(data):
     tokens = lflatten([d.split(" ") for d in data])
-    num_lines = int(tokens.pop(0))
+    tokens.pop(0)
 
     return dict(tokens=tokens)
 
 
 if __name__ == "__main__":
-    level, quests = 3, 5
+    level, quests = 1, 5
     for quest in range(quests + 1):
         if quest == 0:
             quest = "example"
@@ -35,11 +32,10 @@ if __name__ == "__main__":
             data = load(fi.read().splitlines())
             # pprint(data)
 
-            print("=== Input {}".format(quest))
-            print("======================")
+            log.info(f"evaluating {input_file}")
 
             result = solve(data)
-            pprint(result)
+            # pprint(result)
 
             with open(output_file, "w+") as fo:
                 fo.write(result)
