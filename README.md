@@ -1,6 +1,6 @@
-# 34th Catalysts Coding Contest
+# 35th Classic Cloudflight Coding Contest
 
-My solutions for the [34th Catalysts Coding Contest](https://codingcontest.org/) in October 2020, written in Python.
+My solutions for the [35th Classic Cloudflight Coding Contest](https://codingcontest.org/) in October 2020, written in Python.
 
 :goat: :goat: :goat:
 
@@ -10,18 +10,24 @@ My solutions for the [34th Catalysts Coding Contest](https://codingcontest.org/)
 
 ## Requirements
 
-### Python >= 3.7
+### Python >= 3.9
 
 Package requirements are specified in the [requirements.txt](requirements.txt) file.
 
-```
-pip3 install -r requirements.txt
+```sh
+python -m pip install -r requirements.txt
 ```
 
 ## Snippets
 
+Run code as a module
+
+```sh
+python -m ccc
+```
+
 Quickly archive the last commit
 
-```
-git archive --format zip -o level1.zip HEAD
+```sh
+git archive --format zip -o code.zip HEAD
 ```
