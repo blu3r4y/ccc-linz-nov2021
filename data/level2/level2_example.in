@@ -1,0 +1,14 @@
+13
+start
+print hello
+if true
+print world
+end
+else
+print something
+end
+print good
+print night
+return true
+print notprinted
+end
