@@ -6,7 +6,10 @@ My solutions for the [35th Classic Cloudflight Coding Contest](https://codingcon
 
 ## Challenges
 
-- TBD
+- :heavy_check_mark: **[Level 1](data/Level%201.pdf)** - [Interim solution](/../level1/ccc/contest.py) - [Final solution](/../level1-refresh/ccc/contest.py)
+- :heavy_check_mark: **[Level 2](data/Level%202.pdf)** - [Interim solution](/../level2/ccc/contest.py) - [Final solution](/../level2-refresh/ccc/contest.py)
+- :heavy_check_mark: **[Level 3](data/Level%203.pdf)** - [Interim solution](/../level3/ccc/contest.py) - [Final solution (post-contest)](/../level3-refresh/ccc/contest.py)
+- :x: **[Level 4](data/Level%204.pdf)** - *unfinished*
 
 ## Requirements
 
