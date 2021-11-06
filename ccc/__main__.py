@@ -15,7 +15,7 @@ def load(data):
 
 
 if __name__ == "__main__":
-    level, quests = 2, 5
+    level, quests = 3, 5
     for quest in range(quests + 1):
         if quest == 0:
             quest = "example"

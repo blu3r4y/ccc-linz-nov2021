@@ -19,9 +19,13 @@ def run(code: str):
     proc = subprocess.Popen(["python", f"tmp/{filename}"], stdout=subprocess.PIPE)
 
     # read output
-    stdout = proc.communicate()[0].decode()
+    stdout = proc.communicate()[0].decode().replace("\r\n", "\n")
+    code = proc.returncode
 
-    log.debug(f"run {filename}")
+    log.debug(f"run tmp/{filename} (code: {code})")
     # log.debug(f"=> {stdout}")
+
+    if code != 0:
+        log.error("program exited with non-zero exit code")
 
     return stdout
