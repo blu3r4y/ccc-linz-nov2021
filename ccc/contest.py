@@ -10,7 +10,7 @@ from collections import defaultdict
 PREFIX = "    "
 
 GRAMMAR = r"""
-    ?start: function+
+    start: function+
 
     function: "start" block "end"
     statement: print_ | return_ | ifelse_ | var_ | set_
