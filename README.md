@@ -1,6 +1,6 @@
 # 35th Classic Cloudflight Coding Contest
 
-My solutions for the [35th Classic Cloudflight Coding Contest](https://codingcontest.org/) in October 2020, written in Python.
+My solutions for the [35th Classic Cloudflight Coding Contest](https://codingcontest.org/) in November 2021, written in Python.
 
 :goat: :goat: :goat:
 
